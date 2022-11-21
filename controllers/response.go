@@ -9,7 +9,7 @@ import (
 
 // Obteniendo solicitud
 
-func SearchResult() {
+func ResultSearch() {
 
 	url := "https://api.checks.truora.com/v1/checks/CHK9ab2d610ff6c497d53e0cfe82764f666"
 	method := "GET"

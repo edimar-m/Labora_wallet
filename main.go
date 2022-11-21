@@ -15,7 +15,7 @@ func main() {
 	//ruta post
 	router.HandleFunc("/search", controllers.SearchRequest).Methods("POST")
 	//ruta get
-	router.HandleFunc("/get", controllers.SearchResult).Methods("GET")
+	router.HandleFunc("/get", controllers.SearchRequest).Methods("GET")
 	server := http.ListenAndServe(":8080", router)
 	log.Fatal(server)
 }
