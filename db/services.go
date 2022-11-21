@@ -1,4 +1,4 @@
-package services
+package db
 
 func InsertLogInDb(dni string) {
 	dbConnection.Exec("INSERT INTO logs (dni, estado, fecha) values ($1, $2, now());", dni, "EN PROCESO")
